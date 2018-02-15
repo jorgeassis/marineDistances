@@ -1,5 +1,8 @@
 # Contour : Pairwise Marine Distances
 
+Minimum marine distances between sites in any region of the world.<br><br>
+
+How it works?<br><br>
 A high-resolution polygon is converted to an infinite resistance surface. <br>
 Minimum distances between sites are computed with a shortest path algorithm considering the infinite resistance of land and null resistance throughout the sea. <br>
 The outcomes are a matrix of pairwise distances, a figure to visualize if sites are well represented in the study area and a figure depicting an example of a shortest marine distance. <br>
