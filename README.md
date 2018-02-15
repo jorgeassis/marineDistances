@@ -10,18 +10,17 @@ The main file with the sites should be structured as “Name Lon Lat” or “Na
 
 # Instructions
 
-0.   Download a high resolution polygon depicting the surface of the world (e.g., Global Self-consistent Hierarchical High-resolution Shorelines; https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html) <br>
-1.   Open R and set the working directory (path to) <br>
-2.   Load the main function "contour" into memory (bellow) <br>
-3.   Run the  main function "contour" <br>
-3.1  The main file with the locations should be text delimited <br>
-3.2  Provide the path of the polygon depicting the surface of the world <br>
-3.3  Define the delimiter and decimal character of the text file <br>
-3.4  Define the main file structure: 1 to "Name Lon Lat" or 2 to "Name Lat Lon" <br>
-3.5  Define if the text file has a header with the column names (TRUE or FALSE) <br>
-3.6  Define the resolution of the study area and the buffer to use around the sites.  
-The buffer can be a simple value or a vector such as c(xmin,xmax,ymin,ymax). <br>
-Choose to export the results as a text delimited file (TRUE or FALSE) <br><br>
+0. Download a high resolution polygon depicting the surface of the world (e.g., Global Self-consistent Hierarchical High-resolution Shorelines; https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html) <br>
+1. Open R and set the working directory (path to) <br>
+2. Load the main function "contour" into memory (bellow) <br>
+3. Run the  main function "contour" <br>
+3.1 The main file with the locations should be text delimited <br>
+3.2 Provide the path of the polygon depicting the surface of the world <br>
+3.3 Define the delimiter and decimal character of the text file <br>
+3.4 Define the main file structure: 1 to "Name Lon Lat" or 2 to "Name Lat Lon" <br>
+3.5 Define if the text file has a header with the column names (TRUE or FALSE) <br>
+3.6 Define the resolution of the study area and the buffer to use around the sites.  The buffer can be a simple value or a vector such as c(xmin,xmax,ymin,ymax). 
+3.7 Choose to export the results as a text delimited file (TRUE or FALSE) <br><br>
 
 contour(  global.polygon = "World/Global_CostLine_HD_Polygon.shp" ,
 file = "example.file.txt" , 
