@@ -22,7 +22,7 @@ The main file with the sites should be structured as “Name Lon Lat” or “Na
 3.6 Define the resolution of the study area and the buffer to use around the sites.  The buffer can be a simple value or a vector such as c(xmin,xmax,ymin,ymax). 
 3.7 Choose to export the results as a text delimited file (TRUE or FALSE) <br><br>
 
-contour(  global.polygon = "World/Global_CostLine_HD_Polygon.shp" ,
+contour(  global.polygon = "Global_CostLine_HD_Polygon.shp" ,
 file = "example.file.txt" , 
 file.sep = "," ,
 file.dec = "." ,
