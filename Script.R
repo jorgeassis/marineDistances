@@ -1,51 +1,6 @@
 ## ---------------------------------------------
-##
 ## Contour : Pairwise Marine Distances
-## Jorge Assis (2016)
-## 
-## A high-resolution polygon is converted to an infinite resistance surface. 
-## Minimum distances between sites are computed with a shortest path algorithm considering the infinite resistance of land and null resistance throughout the sea. 
-## The outcomes are a matrix of pairwise distances, a figure to visualize if sites are well represented in the study area and a figure depicting an example of a shortest marine distance.
-## The main file with the sites should be structured as “Name Lon Lat” or “Name Lat Lon”. Coordinates must be be decimal degrees.
-##
-## ---------------------------------------------
-## Instructions
-##
-## 0.   Download a high resolution polygon depicting the surface of the world (e.g., Global Self-consistent Hierarchical High-resolution Shorelines; https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html)
-## 1.   Open R and set the working directory (path to)
-## 2.   Load the main function "contour" into memory (bellow)
-## 3.   Run the  main function "contour"
-## 3.1  The main file with the locations should be text delimited
-## 3.2  Provide the path of the polygon depicting the surface of the world
-## 3.3  Define the delimiter and decimal character of the text file
-## 3.4  Define the main file structure: 1 to "Name Lon Lat" or 2 to "Name Lat Lon"
-## 3.5  Define if the text file has a header with the column names (TRUE or FALSE)
-## 3.6  Define the resolution of the study area and the buffer to use around the sites. 
-##      The buffer can be a simple value or a vector such as c(xmin,xmax,ymin,ymax).
-## 3.7  Choose to export the results as a text delimited file (TRUE or FALSE)
-##
-## ---------------------------------------------
-## Example
-##
-## contour(  global.polygon = "World/Global_CostLine_HD_Polygon.shp" ,
-##           file = "example.file.txt" , 
-##           file.sep = "," ,
-##           file.dec = "." ,
-##           file.strucutre = 2 , 
-##           file.header = FALSE ,
-##           resolution = 0.01 ,
-##           buffer = c(5,5,5,5) ,
-##           export.file = TRUE   )
-## 
-## ---------------------------------------------
-## Citation
-## 
-## Assis, J., Castilho Coelho, N., Alberto, F., Valero, M., Raimondi, P., Reed, D., … Serrão, E. A. (2013). High and Distinct Range-Edge Genetic Diversity despite Local Bottlenecks. PLoS ONE, 8(7), e68646. https://doi.org/10.1371/journal.pone.0068646
-## 
-## ------------------------------------------------------------------------------------------------------------------
-
-## ------------------------------------------------------------------------------
-## Run the following code to load the main function "contour" into memory
+## Jorge Assis (2018)
 ## ------------------------------------------------------------------------------
 
 global.polygon <- "/Volumes/Albacora/Dropbox/Raw Data/Shapefiles/World Present/Global_CostLine_HD_Polygon.shp"
