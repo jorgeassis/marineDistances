@@ -16,11 +16,10 @@ Instructions to get the project up and running on your local machine.
 ### Prerequisites
 
 Install the last verion of R available at [The Comprehensive R Archive Network](https://cran.r-project.org/).
+Download a high resolution polygon depicting the surface of the world (e.g., Global Self-consistent Hierarchical High-resolution Shorelines; https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html) <br>
 
 ### Running the code
 
-```
-0. Download a high resolution polygon depicting the surface of the world (e.g., Global Self-consistent Hierarchical High-resolution Shorelines; https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html) <br>
 1. Open R and set the working directory (path to) <br>
 2. Load the main function "contour" into memory (bellow) <br>
 3. Run the  main function "contour"<br>
@@ -32,6 +31,7 @@ Install the last verion of R available at [The Comprehensive R Archive Network](
 3.6 Define the resolution of the study area and the buffer to use around the sites.  The buffer can be a simple value or a vector such as c(xmin,xmax,ymin,ymax).
 3.7 Choose to export the results as a text delimited file (TRUE or FALSE) <br><br>
 
+```
 contour(  global.polygon = "Global_CostLine_HD_Polygon.shp" ,
 file = "example.file.txt" , 
 file.sep = "," ,
