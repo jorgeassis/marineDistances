@@ -1,15 +1,25 @@
 # Contour : Pairwise Marine Distances
 
-Minimum marine distances between sites in any region of the world.<br><br>
+Minimum marine distances between sites in any region of the world.
 
-<b>How it works?</b><br>
+## How it works?
+
 A high-resolution polygon is converted to an infinite resistance surface. <br>
 Minimum distances between sites are computed with a shortest path algorithm considering the infinite resistance of land and null resistance throughout the sea. <br>
 The outcomes are a matrix of pairwise distances, a figure to visualize if sites are well represented in the study area and a figure depicting an example of a shortest marine distance. <br>
 The main file with the sites should be structured as “Name Lon Lat” or “Name Lat Lon”. Coordinates must be in decimal degrees.
 
-# Instructions
+## Getting Started
 
+Instructions to get the project up and running on your local machine.
+
+### Prerequisites
+
+Install the last verion of R available at [The Comprehensive R Archive Network](https://cran.r-project.org/).
+
+### Running the code
+
+```
 0. Download a high resolution polygon depicting the surface of the world (e.g., Global Self-consistent Hierarchical High-resolution Shorelines; https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html) <br>
 1. Open R and set the working directory (path to) <br>
 2. Load the main function "contour" into memory (bellow) <br>
@@ -31,6 +41,17 @@ file.header = FALSE ,
 resolution = 0.01 ,
 buffer = c(5,5,5,5) ,
 export.file = TRUE   ) <br>
+```
 
-# Citation
+## Authors
+
+* **Jorge Assis** @ [Bears Studio](https://www.bears.studio)
+
+## License
+
+Except where otherwise noted, the content on this repository is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+
+## Citation
+
 Assis, J., Castilho Coelho, N., Alberto, F., Valero, M., Raimondi, P., Reed, D., … Serrão, E. A. (2013). High and Distinct Range-Edge Genetic Diversity despite Local Bottlenecks. PLoS ONE, 8(7), e68646. https://doi.org/10.1371/journal.pone.0068646
+
