@@ -3,8 +3,6 @@
 ## Jorge Assis (2018)
 ## ------------------------------------------------------------------------------
 
-global.polygon <- "/Volumes/Albacora/Dropbox/Raw Data/Shapefiles/World Present/Global_CostLine_HD_Polygon.shp"
-contour( global.polygon = global.polygon , file= "Data/sampling_sites.txt" , file.sep = ";" , file.dec = "." , file.strucutre = 1 , file.header = FALSE , resolution = 0.01 , buffer = c(1,1,1,1) , export.file = TRUE )
 
 ## -----------------
 
